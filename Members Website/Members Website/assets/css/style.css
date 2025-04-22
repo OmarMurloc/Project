@@ -1,0 +1,107 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #343a40;
+}
+
+.custom-navbar {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.navbar-toggler {
+    border: 2px solid white;
+}
+
+.custom-navbar .nav-link {
+    color: white;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: #ffd700 !important;
+}
+
+.hero-section {
+    background: url('../images/banner.png') no-repeat center center/cover;
+    min-height: 86.5vh;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-section .text-white {
+    z-index: 2;
+    position: relative;
+}
+
+.meet-members-section {
+    background-color: #f8f9fa;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover img {
+    transform: scale(1.05);
+}
+
+.member-card h5 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.member-card a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.member-card a:hover h5 {
+    color: #007bff;
+}
+
+.cta-section {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.cta-section a {
+    color: #fff;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .nav-buttons .nav-link {
+        display: inline-block;
+        margin: 0 8px;
+        padding: 10px 0px;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: black;
+        background-color: white;
+        transition: 0.3s ease;
+        font-weight: 500;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .nav-buttons .nav-link:hover {
+        background-color: transparent;
+        color: white;
+    }
+}
